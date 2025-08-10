@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Copy } from "lucide-react"; // Install lucide-react if not already: npm install lucide-react
+import upiQrcode from '../../Other_Data/UPI_Qrcode.jpeg'
 
 export default function Donate() {
   const upiId = "adars94276022@barodampay"; // Change to your real UPI ID
@@ -18,7 +19,7 @@ export default function Donate() {
       {/* QR Code */}
       <div className="flex flex-col items-center mb-6">
         <img
-          src="/Other_Data/UPI_Qrcode.jpeg"
+          src={upiQrcode}
           alt="UPI QR Code"
           className="w-64 h-64 object-contain border p-2 rounded-lg shadow-md"
         />

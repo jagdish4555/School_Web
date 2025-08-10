@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FACILITIES } from '../data/facilities';
 import { EVENTS } from '../data/events';
 import FloatingParticles from '../components/FloatingParticles';
+import schoolMain from '../../Other_Data/School_Main.jpeg'
 
 const events = EVENTS.map(e => ({ title: e.title, desc: e.description, img: e.cover, slug: e.slug }));
 
@@ -26,7 +27,7 @@ export default function Home() {
       {/* Hero with parallax */}
       <motion.section 
         className="relative h-[70vh] bg-cover bg-center overflow-hidden" 
-        style={{ backgroundImage: `url(/Other_Data/School_Main.jpeg)`, y, opacity }}
+        style={{ backgroundImage: `url(${schoolMain})`, y, opacity }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-purple-900/60 to-indigo-900/70" />
         <div className="absolute inset-0">
