@@ -38,6 +38,7 @@ export default function Navbar() {
             <NavLink to="/teachers" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Teachers</NavLink>
             <NavLink to="/events" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Event</NavLink>
             <NavLink to="/about" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>About</NavLink>
+            <NavLink to="/donate" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Donate</NavLink>
             <NavLink to="/contact" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Contact</NavLink>
           </nav>
           <div className="flex items-center gap-2">
@@ -59,6 +60,7 @@ export default function Navbar() {
             <NavLink onClick={() => setOpen(false)} to="/teachers" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Teachers</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/events" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Event</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/about" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>About</NavLink>
+            <NavLink onClick={() => setOpen(false)} to="/donate" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Donate</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/contact" className={({isActive}) => `${linkBase} ${isActive? linkActive: linkIdle}`}>Contact</NavLink>
           </div>
         </div>

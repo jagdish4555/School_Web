@@ -117,6 +117,80 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Student Section - New Addition */}
+      <section className="py-16 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 dark:from-gray-950 dark:via-green-950/20 dark:to-teal-950/20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-mesh-gradient opacity-5" />
+        <div className="absolute top-10 left-10 w-40 h-40 bg-emerald-400/20 rounded-full animate-blob" />
+        <div className="absolute bottom-10 right-10 w-32 h-32 bg-teal-400/20 rounded-full animate-blob" style={{ animationDelay: '3s' }} />
+        
+        <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="group"
+          >
+            <a
+              href="https://worldedusafari.blogspot.com/2023/10/shiksha-app.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <motion.div 
+                className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-3xl shadow-2xl hover:shadow-4xl transition-all duration-500 p-8 md:p-12 border border-white/20 group-hover:border-emerald-200/50"
+                whileHover={{ scale: 1.03, rotateY: 2, y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                >
+                  <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-4 group-hover:from-emerald-700 group-hover:to-teal-700 transition-all duration-300">
+                    Student Section
+                  </h3>
+                  
+                  <motion.div 
+                    className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mx-auto mb-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                  />
+                  
+                  <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
+                  શૈક્ષણિક મટીરીયલ, જુના પ્રશ્નપત્રો, ટેસ્ટ- ક્વિઝ આપવા માટે, તથા લેક્ચરના વિડીયો વગેરે જોવા માટે અહીં ક્લિક કરો.
+                  </p>
+                  
+                  <motion.div 
+                    className="inline-flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-semibold text-lg group-hover:translate-x-2 transition-all duration-300"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <span>Click Here</span>
+                    <motion.svg 
+                      className="w-6 h-6" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      whileHover={{ x: 3 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </motion.svg>
+                  </motion.div>
+                </motion.div>
+                
+                {/* Animated background elements */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-emerald-400/30 to-teal-400/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" />
+                <div className="absolute bottom-4 left-4 w-6 h-6 bg-gradient-to-br from-teal-400/30 to-emerald-400/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ animationDelay: '0.5s' }} />
+              </motion.div>
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Facilities with enhanced animations */}
       <section className="py-20 bg-gradient-to-b from-white via-gray-50/50 to-blue-50/30 dark:from-gray-900 dark:via-gray-900/90 dark:to-blue-950/20 relative overflow-hidden">
         <div className="absolute inset-0">
@@ -200,5 +274,3 @@ export default function Home() {
     </div>
   );
 }
-
-

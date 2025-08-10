@@ -7,6 +7,7 @@ import Events from './pages/Events';
 import EventDetail from './pages/EventDetail';
 // Admin and Results temporarily disabled
 import About from './pages/About';
+import Donate from './pages/Donate';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -28,6 +29,7 @@ function App() {
             <Route path="/teachers/:id" element={<TeacherProfile />} />
             {/* Routes temporarily disabled */}
             <Route path="/about" element={<About />} />
+            <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
