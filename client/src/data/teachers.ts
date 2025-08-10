@@ -45,11 +45,6 @@ const textModules = import.meta.glob('../../Teachers_data/*.txt', {
   as: 'raw',
 }) as Record<string, string>
 
-function baseName(path: string): string {
-  const file = path.split('/').pop() || path
-  return file.replace(/\.(png|jpg|jpeg|webp|gif|txt)$/i, '')
-}
-
 const bySlug: Record<string, Partial<Teacher>> = {}
 
 // Process image files with order extraction
