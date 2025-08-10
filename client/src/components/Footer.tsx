@@ -21,7 +21,7 @@ export default function Footer() {
           <h5 className="text-white font-semibold">Contact</h5>
           <p className="mt-2 text-sm">SHETH D.H. HIGH SCHOOL, JAGUDAN</p>
           <p className="text-sm"> +91 9428752528</p>
-          <p className="text-sm"> info@shethdhighschool.com</p>
+          <p className="text-sm"> dhjagudan@gmail.com</p>
         </div>
       </div>
       <div className="border-t border-gray-800 text-center py-4 text-xs text-gray-500">© {new Date().getFullYear()} SHETH D.H. HIGH SCHOOL, JAGUDAN</div>

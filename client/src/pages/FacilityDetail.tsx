@@ -105,15 +105,6 @@ export default function FacilityDetail() {
                 transition={{ delay: 1, duration: 0.8 }}
               />
 
-              <motion.p 
-                className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line text-lg mb-8"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.2, duration: 0.6 }}
-              >
-                {facility.summary}
-              </motion.p>
-
               {/* Facility sections with staggered animations */}
               {facility.sections && facility.sections.map((s, i) => (
                 <motion.div
